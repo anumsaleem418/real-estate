@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Real Estate Website</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f2f2f2;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #111827;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: #dbeafe;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 35px;
+      color: #1e3a8a;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .properties {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .property-box {
+      background: white;
+      width: 280px;
+      display: inline-block;
+      margin: 15px;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px gray;
+      vertical-align: top;
+    }
+
+    .property-box img {
+      width: 100%;
+      height: 170px;
+      border-radius: 6px;
+    }
+
+    .property-box h3 {
+      color: #1e3a8a;
+    }
+
+    .property-box button {
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .property-box button:hover {
+      background: #2563eb;
+    }
+
+    .contact {
+      background: white;
+      padding: 30px;
+      text-align: center;
+    }
+
+    input,
+    textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 8px;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Dream Home Real Estate</h1>
+    <p>Find Your Perfect Home</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#properties">Properties</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Buy, Sell, and Rent Properties</h2>
+    <p>We help you find the best house, apartment, and commercial property.</p>
+  </div>
+
+  <div class="properties" id="properties">
+    <h2>Available Properties</h2>
+
+    <div class="property-box">
+      <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="House">
+      <h3>Modern House</h3>
+      <p>Location: Lahore</p>
+      <p>Price: Rs. 25,000,000</p>
+      <button onclick="showMessage()">View Details</button>
+    </div>
+
+    <div class="property-box">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Villa">
+      <h3>Luxury Villa</h3>
+      <p>Location: Islamabad</p>
+      <p>Price: Rs. 45,000,000</p>
+      <button onclick="showMessage()">View Details</button>
+    </div>
+
+    <div class="property-box">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Apartment">
+      <h3>City Apartment</h3>
+      <p>Location: Karachi</p>
+      <p>Price: Rs. 15,000,000</p>
+      <button onclick="showMessage()">View Details</button>
+    </div>
+  </div>
+
+  <div class="contact" id="contact">
+    <h2>Contact Us</h2>
+
+    <input type="text" placeholder="Your Name">
+    <br>
+
+    <input type="email" placeholder="Your Email">
+    <br>
+
+    <textarea placeholder="Your Message"></textarea>
+    <br>
+
+    <button onclick="contactMessage()">Send Message</button>
+  </div>
+
+  <footer>
+    <p>© 2026 Dream Home Real Estate. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert("Property details will be shown here.");
+    }
+
+    function contactMessage() {
+      alert("Your message has been sent.");
+    }
+  </script>
+
+</body>
+</html>
